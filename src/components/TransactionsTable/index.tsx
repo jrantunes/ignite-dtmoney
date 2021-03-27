@@ -7,7 +7,7 @@ export function TransactionsTable() {
   const [transactions, setTransactions] = useState([]);
 
   useEffect(() => {
-    api.get('transactions')
+    api.get('/transactions')
       .then(response => console.log(response.data));
   }, []);
 
